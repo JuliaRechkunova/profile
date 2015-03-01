@@ -1,5 +1,0 @@
-/**
- * csstime
- * Sat, 28 Feb 2015 17:20:01 GMT
- */
-!function(t,n,e){"use strict";function o(){i=n.select("#js-snap-colors"),u=i.group(i.selectAll("circle:nth-child(odd)")),s=i.group(i.selectAll("circle:nth-child(even)")),setTimeout(r,3e3)}function r(){var t=a(60,120),n=1e3+a(300,500),o=e[f[a(0,f.length)]],c=Math.random()>.5?1:-1,i="s1.2,1.2",m=",300,300";u.animate({transform:"r"+-t*c+m},n,o,function(){u.animate({transform:"r0"+m},n,o)}),s.animate({transform:"r"+t*c+m+i},n,o,function(){s.animate({transform:"r0"+m+"s1,1"},n,o,function(){setTimeout(r,3e3)})})}function c(){return"function"==typeof t.document.createElementNS&&"function"==typeof t.document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect&&!("opera"in t)}function a(t,n){return Math.floor(Math.random()*(n-t))+t}if(c()&&n){"function"==typeof t.document.addEventListener&&t.document.addEventListener("DOMContentLoaded",o);var i,u,s,f=["elastic","bounce","easeinout"]}}(window,Snap,mina);
