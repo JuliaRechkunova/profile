@@ -149,6 +149,12 @@
 		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 		ga('create', 'UA-33234679-5', 'auto');
 		ga('send', 'pageview');
+		document.addEventListener('click', function (event) {
+			if (!ga || !event.target || event.target.tagName.toLowerCase() !== 'a') {
+				return;
+			}
+			ga('send', 'event', 'click', event.target.title);
+		});
 	</script>
 </body>
 </html>
