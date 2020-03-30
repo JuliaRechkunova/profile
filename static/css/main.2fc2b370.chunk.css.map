@@ -1,0 +1,1 @@
+{"version":3,"sources":["Particles.css"],"names":[],"mappings":"AAAA,WACE,WAAY,CACZ,aACF,CAEA,kBACE,SAAU,CACV,4BACF","file":"main.2fc2b370.chunk.css","sourcesContent":[".particles {\n  top: -5.7rem;\n  left: -11.7rem;\n}\n\n.particles circle {\n  opacity: 0;\n  transform-origin: 300px 300px;\n}\n"]}
